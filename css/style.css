@@ -1,0 +1,469 @@
+*{
+    margin: 0;
+}
+
+ .my-nav {
+    font-family: "system-ui", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    color: white !important;
+ }  
+ /* Target all <a> elements inside the navbar's <li> */
+.navbar-nav .nav-item a {
+    color: white; /* Replace with your desired color */
+}
+.navbar-toggler{
+    color :#fff;
+}
+/* Optionally, to change the color on hover */
+
+.nav-link.line {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px; /* Adds a little space between the word and the line */
+}
+
+.nav-link.line::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%; /* This ensures the line fits the word */
+    height: 2px; /* Thickness of the line */
+    background-color: #fff; /* Line color (you can change it to your desired color) */
+}
+.nav-link.line2 {
+    margin-left: 10px;
+    position: relative; /* Position relative to allow absolute positioning of the line */
+    display: inline-block; /* Ensure the element is an inline block */
+    padding-bottom: 5px; /* Space between the text and the line */
+    transition: color 0.3s; /* Smooth transition for the text color */
+}
+
+.nav-link.line2::after {
+    content: '';
+    position: absolute;
+    left: 0; /* Start from the left */
+    bottom: 0; /* Position at the bottom of the text */
+    width: 0; /* Start with width 0 (hidden) */
+    height: 2px; /* Thickness of the line */
+    background-color: transparent; /* Start as transparent */
+    transition: width 0.3s ease, background-color 0.3s; /* Smooth transitions */
+}
+
+
+
+  .navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
+
+
+/* Change the width and color on hover */
+.nav-link.line2:hover::after {
+    background-color: #fff; /* Change this to your desired line color */
+    width: 100%; /* Expand to the full width of the link */
+}
+.dropdown-item  {
+    color: #000000 !important; /* Change to your desired text color */
+}
+
+/* Dropdown toggle styles */
+.nav-link.dropdown-toggle.dropdown {
+    position: relative; /* Position relative to allow absolute positioning of the line */
+    display: inline-block; /* Ensure the element is an inline block */
+    padding-bottom: 5px; /* Space between the text and the line */
+    transition: color 0.3s; /* Smooth transition for the text color */
+}
+
+.nav-link.dropdown-toggle.dropdown::after {
+    content: '';
+    position: absolute;
+    left: 0; /* Start from the left */
+    bottom: 0; /* Position at the bottom of the text */
+    width: 0; /* Start with width 0 (hidden) */
+    height: 2px; /* Thickness of the line */
+    background-color: transparent; /* Start as transparent */
+    transition: width 0.3s ease, background-color 0.3s; /* Smooth transitions */
+}
+
+/* Change the width and color on hover */
+.nav-link.dropdown-toggle.dropdown:hover::after {
+    background-color: #fff; /* Change this to your desired line color */
+    
+    width: 100%; /* Expand to the full width of the link */
+}
+
+/* Dropdown menu hover effect */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block; /* Show the dropdown menu on hover */
+}
+
+.dropdown-menu  {
+    display: none; /* Hide the dropdown menu by default */
+    position: absolute; /* Position it relative to the dropdown item */
+    margin-top: 0; /* Adjust margin as necessary */
+    left: 0; /* Align to the left */
+    z-index: 1000; /* Ensure dropdown is above other content */
+}
+
+/* Optionally add transition for dropdown */
+.dropdown-menu {
+    transition: all 0.3s ease; /* Smooth transition for dropdown appearance */
+}
+
+
+
+.content-logo{
+   font-size: 72px;
+   font-family: "system-ui", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-weight: 700;
+  
+    background-image: url('../imges/hero-bg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: white;
+    height: 100vh;
+  
+}
+.bold-span span{
+font-weight: 600;
+font-size: 18px;
+}
+.content-logo .logo-span{
+   font-weight: 600;
+    font-size: 50px !important  ;
+}
+.testimonial{
+padding: 10% 5%;
+}
+.progress-section{
+    margin-top: 10%;
+}
+.desc h2 {
+    display: inline-block; /* Ensures the line fits the text width */
+    position: relative;    /* Allows us to position the line */
+    margin-bottom: 10px;   /* Adds some space below the heading */
+}
+.desc h2::after {
+    content: "";               /* Creates a pseudo-element for the line */
+    position: absolute;         /* Positioning it relative to the h2 */
+    left: 0;                    /* Start from the left */
+    bottom: -5px;               /* Position the line below the text */
+    width: 70%;                /* Make the line match the width of the h2 text */
+    height: 4px;                /* Line thickness */
+    background-color: #0078FF;    /* Line color */
+}
+.title{
+margin-bottom: 7%;
+}
+.title {
+    display: inline-block; /* Ensures the line fits the text width */
+    position: relative;    /* Allows us to position the line */
+    
+}
+.title::after {
+    content: "";               /* Creates a pseudo-element for the line */
+    position: absolute;         /* Positioning it relative to the h2 */
+    left: 45%;                    /* Start from the left */
+    bottom: -3px;               /* Position the line below the text */
+    width: 10%;                /* Make the line match the width of the h2 text */
+    height: 4px;                /* Line thickness */
+    background-color: #0078FF;    /* Line color */
+}
+.service-title{
+    margin-top: 5% ;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+}
+
+
+.service-paragraph{
+color: #535353;
+}
+.btn {
+    position: relative; /* Position relative to allow absolute positioning of the pseudo-element */
+    z-index: 1; /* Ensure button is above the circle */
+}
+
+.btn::after {
+    content: ''; /* Required for the pseudo-element to display */
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    width: 90px; /* Adjust width for the circle */
+    height: 90px; /* Adjust height for the circle */
+    border: 7px solid #0078FF; /* Border color and thickness */
+    border-radius: 50%; /* Make it a circle */
+    transform: translate(-50%, -50%); /* Center the circle */
+    z-index: -1; /* Send the circle behind the button */
+    transition: border-color 0.3s, background-color 0.3s; /* Add transition for smooth effect */
+    
+}
+
+
+.btn:hover::after {
+   
+    border-color: #CDE1F8; /* Change border color to grey on hover */
+    background-color: #0078FF; /* Change background color on hover */
+}
+.counters {
+    background-image: linear-gradient(rgba(7, 91, 185, 0.7), rgba(7, 91, 185, 0.7)), url(../imges/counters-bg.jpg);
+   
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.counter-content {
+    margin-top: 40%;
+    margin-bottom: 40%;
+}
+.counter-content img{
+    text-align: center;
+   margin-left: 28%;
+}
+.counter-content .counter-info{
+   color: white;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-size: 32px;
+   
+}
+.circle-btn {
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Circle height and width are equal */
+    border: 3px solid #0078FF; /* Blue border */
+    border-radius: 50%; /* Make it a circle */
+    position: relative; /* For positioning the plus sign */
+    display: flex;
+    justify-content: center; /* Center the plus icon */
+    align-items: center;
+}
+
+.plus-icon::before,
+.plus-icon::after {
+    content: '';
+    position: absolute;
+    background-color: #0078FF; /* Same color as the border */
+}
+
+.plus-icon::before {
+    width: 3px; /* Width of the vertical bar */
+    height: 20px; /* Height of the vertical bar */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center it */
+}
+
+.plus-icon::after {
+    width: 20px; /* Height of the horizontal bar */
+    height: 3px; /* Width of the horizontal bar */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center it */
+}
+.card-text span{
+    color: #0078FF;
+}
+.card-text p{
+    font-weight: 500;
+}
+
+.potflio .title{
+    text-align: center;
+}
+
+.potflio.title {
+    
+    display: inline-block; /* Ensures the line fits the text width */
+    position: relative;    /* Allows us to position the line */
+}
+
+.potflio.title::after {
+    content: "";               /* Creates a pseudo-element for the line */
+    position: absolute;         /* Positioning it relative to the h2 */
+    left: 50%;                  /* Center the line */
+    transform: translateX(-50%); /* Offset to align it perfectly in the center */
+    bottom: -3px;               /* Position the line below the text */
+    width: 10%;                /* Make the line match the width of the h2 text */
+    height: 4px;               /* Line thickness */
+    background-color: #0078FF; /* Line color */
+}
+
+.potflio-title {
+    margin-top: 5%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+}
+
+.potflio-paragraph {
+    color: #535353;
+    margin-top: 10px; /* Optional: Add some space above the paragraph */
+}
+.image-container {
+    overflow: hidden; /* Hides the overflow of the scaled image */
+}
+
+.card-img-top {
+    transition: transform 0.3s ease; /* Smooth transition */
+    transform-origin: center; /* Set the origin for scaling */
+}
+
+.card-img-top:hover {
+    transform: scale(1.1); /* Scale in on hover */
+}
+.slider {
+    background-image: linear-gradient(rgba(7, 91, 185, 0.7), rgba(7, 91, 185, 0.7)), url(../imges/overlay-bg.jpg);
+    height: 70vh;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.slider {
+    background-image: linear-gradient(rgba(7, 91, 185, 0.7), rgba(7, 91, 185, 0.7)), url(../imges/overlay-bg.jpg);
+    height: 70vh;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.carousel-caption-custom {
+    position: static;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.carousel-item img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+
+/* Style the indicators as small circles */
+.carousel-indicators.buttons {
+    position:static;
+    display: flex;
+    justify-content: center; /* Center the indicators */
+    margin-top: 85px; /* Space between the caption and indicators */
+}
+
+.carousel-indicators.buttons button {
+    width: 12px; /* Small circle size */
+    height: 12px;
+    border-radius: 50%; /* Makes it circular */
+    background-color: #fff; /* White circle */
+    border: none; /* Remove default borders */
+    margin: 0 5px; /* Add spacing between circles */
+    opacity: 0.7; /* Slight transparency */
+    transition: opacity 0.3s; /* Smooth transition */
+   
+}
+
+.carousel-indicators.buttons button.active {
+    background-color: #ffffff; /* Highlight active button */
+    opacity: 1;
+}
+.carousel-item h5{
+    color: white;
+}
+.carousel-item p{
+    color: white;
+}
+.img-card {
+    
+    transition: transform 0.3s ease;
+  }
+  
+  .img-card:hover {
+    transform: none; /* Prevent scaling */
+  }
+  .footer-img{
+    width: 10%;
+  }
+ .details span{
+    font-size: 12px;
+ }
+ .card {
+    position: relative;
+   
+}
+
+.top-box {
+    position: absolute;
+    top: 55%;
+    left: 50;
+    margin-left: 37%;
+    width: 15%;
+    background-color: #007BFF; /* Choose your box color */
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.highlight-text {
+    color: white;
+    font-size: 15px;
+    padding: 0 3px;
+}
+
+.card-title {
+    margin-top: 10px; /* Adjust spacing under the box */
+}
+.last-section {
+    margin-top: 6%;
+    background-image: linear-gradient(rgba(7, 91, 185, 0.7), rgba(7, 91, 185, 0.7)), url(../imges/overlay-bg.jpg);
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+ .botton{
+    margin-left: 35%;
+    border-radius: 25px ;
+    background-color: #0078FF;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin-bottom: 20%;
+}
+.btnn {
+    border: none; /* Removes any border around the button */
+    outline: none; /* Removes any outline that might appear */
+    padding-top: 18px; /* Add top padding */
+    position: relative; /* Position relative to allow absolute positioning of the pseudo-element */
+    z-index: 1; /* Ensure button is above the circle */
+}
+
+.btnn::after {
+    content: ''; /* Required for the pseudo-element to display */
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    width: 50px; /* Adjust width for the circle */
+    height: 55px; /* Adjust height for the circle */
+    border: 4px solid #0078FF; /* Border color and thickness */
+    border-radius: 60%; /* Make it a circle */
+    transform: translate(-50%, -50%); /* Center the circle */
+    z-index: -1; /* Send the circle behind the button */
+    transition: border-color 0.3s, background-color 0.3s; /* Add transition for smooth effect */
+   
+}
+
+.btnn:hover::after {
+    
+    border-color: #CDE1F8; /* Change border color to grey on hover */
+    background-color: #0078FF; /* Change background color on hover */
+}
+.footer{
+    width: 100%;
+    background-color: #266bc6;
+}
+
